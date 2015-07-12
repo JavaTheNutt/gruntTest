@@ -1,5 +1,5 @@
 angular
     .module('myApp')
-    .controller('MainCtrl', ['$scope', function($scope){
-        $scope.name = 'joe';
+    .controller('MainCtrl', ['$rootScope', function($rootScope){
+        $rootScope.name = 'Home';
     }]);

@@ -16,18 +16,29 @@ angular
                 templateUrl: 'templates/about.html',
                 controller: 'AboutCtrl'
             })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'templates/contact.html',
+                controller: 'ContactCtrl'
+            })
     }]);
+
 
 
 
 angular.module('myApp')
-    .controller('AboutCtrl', ['$scope', function ($scope) {
-        $scope.name = 'about';
+    .controller('AboutCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.name = 'About';
     }]);
 
 
+angular.module('myApp')
+    .controller('ContactCtrl', ['$rootScope', function ($rootScope){
+        $rootScope.name = 'Contact';
+    }]);
+
 angular
     .module('myApp')
-    .controller('MainCtrl', ['$scope', function($scope){
-        $scope.name = 'joe';
+    .controller('MainCtrl', ['$rootScope', function($rootScope){
+        $rootScope.name = 'Home';
     }]);

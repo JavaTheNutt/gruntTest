@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         cssmin: {
             combine: {
                files:{
-                   'public/css/main.min.css': ['public/css/*.css']
+                   'public/css/main.css': ['public/css/*.css']
                }
             }
         },
@@ -38,8 +38,8 @@ module.exports = function (grunt) {
                 dest: 'public/js/build/dependencies.js'
             },
             css: {
-                src:['bower_components/bootstrap/dist/css/bootstrap.js', 'public/css/*.css'],
-                dest: 'src/resources/css/mainStyle.css'
+                src:['bower_components/bootstrap/dist/css/bootstrap.js', 'bower_components/bootstrap/dist/css/bootstrap-theme.css'],
+                dest: 'public/css/build/dependencyCss.css'
             }
         }
     });
@@ -50,5 +50,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     /*Do the task*/
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 };

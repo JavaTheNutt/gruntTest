@@ -16,5 +16,11 @@ angular
                 templateUrl: 'templates/about.html',
                 controller: 'AboutCtrl'
             })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: 'templates/contact.html',
+                controller: 'ContactCtrl'
+            })
     }]);
+
 
