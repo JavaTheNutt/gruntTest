@@ -2,7 +2,7 @@
   "name": "tnbgrunt01",
   "version": "1.0.0",
   "description": "Test grunt",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/JavaTheNutt/gruntTest/issues"
   },
-  "homepage": "https://github.com/JavaTheNutt/gruntTest#readme"
+  "homepage": "https://github.com/JavaTheNutt/gruntTest#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contib-uglify": "^0.9.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.3"
+  }
 }

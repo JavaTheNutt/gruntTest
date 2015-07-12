@@ -1,0 +1,10 @@
+.main{
+    font-family: Verdana sans-serif;
+    border: solid blue 1px;
+}
+#box1{
+    background-color: blue;
+}
+#box2{
+    background-color: green;
+}

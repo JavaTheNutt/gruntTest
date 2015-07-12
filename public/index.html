@@ -7,13 +7,14 @@
     <title>GruntTest</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
+<body ng-app="myApp">
 <div class="container">
-
+    <div ng-include="'templates/nav.html'"></div>
+    <div ui-view></div>
 </div>
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/build/dependencies.js"></script>
+<script src="js/build/main.min.js"></script>
 </body>
 </html>
