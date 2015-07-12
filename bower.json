@@ -1,0 +1,20 @@
+{
+  "name": "TNBGrunt01",
+  "version": "1.0.0",
+  "authors": [
+    "Joe Wemyss <joewemyss3@gmail.com>"
+  ],
+  "description": "Test Grunt",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
